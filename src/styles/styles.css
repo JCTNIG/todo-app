@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* White background color for the entire app */
+  color: #2ecc71; /* Green text color for the entire app */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2ecc71; /* Green text color for the heading */
+}
+
+input[type="text"],
+input[type="datetime-local"],
+button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  background-color: #27ae60; /* Darker green background color for inputs and buttons */
+  color: #fff; /* White text color for inputs and buttons */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+input[type="text"]:focus,
+input[type="datetime-local"]:focus,
+button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #219653; /* Dark green background color on hover for buttons */
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#todo-list li {
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #27ae60; /* Darker green background color for todo items */
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  color: #fff; /* White text color for todo items */
+}
+
+#todo-list li.completed {
+  background-color: #2ecc71; /* Lighter green background color for completed todo items */
+}
+
+#todo-list li span {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+#todo-list li button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 12px; /* Smaller font size for delete buttons */
+  width: 60px; /* Fixed width for delete buttons */
+}
+
+#todo-list li button:hover {
+  background-color: #c0392b; /* Dark red background color on hover for delete buttons */
+}
+
+
